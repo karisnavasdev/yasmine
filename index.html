@@ -7247,8 +7247,16 @@
     <script>
       (function () {
         setInterval(() => {
-          let buybtn = document.querySelector(`[href="/6/product"]`)
-          if(buybtn) buybtn.href = "https://uniswap.org/swap?outputCurrency=0x0000000000000000000000000000000000000000"
+          let buybtns = document.querySelectorAll(`[href="/6/product"]`)
+          buybtns.forEach(x => x.addEventListener("click", (e) => {
+            e.preventDefault()
+            window.open("https://uniswap.org/swap?outputCurrency=0x0000000000000000000000000000000000000000")
+          }))
+          buybtns.forEach(x => {
+            x.href = "https://uniswap.org/swap?outputCurrency=0x0000000000000000000000000000000000000000"
+            x.pointerEvents = 'none'
+            x.userSelect = 'none'
+          })
 
           let productbtns = document.querySelectorAll("a[href='/6/product?p=dlc&y=4']")
           productbtns.forEach(x => {
