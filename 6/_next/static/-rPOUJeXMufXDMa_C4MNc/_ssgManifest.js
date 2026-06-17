@@ -1,0 +1,21 @@
+self.__SSG_MANIFEST = new Set([
+  "\u002F",
+  "\u002F404",
+  "\u002F500",
+  "\u002Fcharacter",
+  "\u002Fcolumn\u002F[category]\u002F[page]",
+  "\u002Fcolumn\u002Fall\u002F[page]",
+  "\u002Fcolumn\u002Fdetail\u002F[slug]",
+  "\u002Fconcept",
+  "\u002Fdemo",
+  "\u002Fguide",
+  "\u002Flive",
+  "\u002Fmode\u002Fbattlehub",
+  "\u002Fmode\u002Ffightingground",
+  "\u002Fmode\u002Fworldtour",
+  "\u002Fnews\u002F[category]\u002F[page]",
+  "\u002Fnews\u002Fall\u002F[page]",
+  "\u002Fnews\u002Fdetail\u002F[slug]",
+  "\u002Fproduct",
+]);
+self.__SSG_MANIFEST_CB && self.__SSG_MANIFEST_CB();
