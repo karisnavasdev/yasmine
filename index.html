@@ -364,8 +364,8 @@
     .layout_info__sns__TmTBQ >li:nth-of-type(6) { display: none !important; }
     
     a[href='/6/news/all/1'],
-    a[href='/6/column/all/1']
-     {
+    a[href='/6/column/all/1'],
+    .enlistmentGuide_link__if_x8 {
       display: none !important;
     }
     a[href='/6/character'] {
@@ -7258,22 +7258,8 @@
             x.userSelect = 'none'
           })
 
-          let productbtns = document.querySelectorAll("a[href='/6/product?p=dlc&y=4']")
+          let productbtns = document.querySelectorAll("a[href='/6/product?p=dlc&y=4'], a[href='/6/buckler/en/welcome'], [href='/6/buckler/en'], [href='/6/guide']")
           productbtns.forEach(x => {
-            x.href = "#"
-            x.pointerEvents = 'none'
-            x.userSelect = 'none'
-          })
-
-          let bucklerbtns = document.querySelectorAll(`[href="/6/buckler/en"]`)
-          bucklerbtns.forEach(x => {
-            x.href = "#"
-            x.pointerEvents = 'none'
-            x.userSelect = 'none'
-          })
-
-          let guidebtns = document.querySelectorAll(`[href="/6/guide"]`)
-          guidebtns.forEach(x => {
             x.href = "#"
             x.pointerEvents = 'none'
             x.userSelect = 'none'
